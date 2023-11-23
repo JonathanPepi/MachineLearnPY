@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Results</title>
+</head>
+<body>
+    <h1>Machine Learning Results</h1>
+    <p>Accuracy: {{ accuracy }}</p>
+    <p>F1 Score: {{ f1_score }}</p>
+    <h2>Confusion Matrix</h2>
+    <img src="data:image/png;base64,{{ confusion_matrix }}" alt="Confusion Matrix">
+    <br>
+    <img src="data:image/png;base64,{{ heatmap_img_str }}" alt="Correlation Heatmap">
+
+</body>
+</html>

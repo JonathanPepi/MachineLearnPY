@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificadores</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Relacionamento: Preço - Quilometragem</h1>
+    <br><br>
+    <p> O dataset selicionado foi o Car Price, que esta relacionando o preço do carro a quilometrgem do mesmo.</p>
+    <form method="post" action="/">
+        <label for="classifier">Classificador:</label>
+        <select name="classifier">
+            <option value="KNN">KNN</option>
+            <option value="SVM">SVM</option>
+            <option value="Decision Tree">Decision Tree</option>
+            <option value="Random Forest">Random Forest</option>
+        </select>
+        <br>
+        <button type="submit">Executar</button>
+    </form>
+</body>
+</html>
